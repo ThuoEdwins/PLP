@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            margin-top: 100px;
+            background-color: #f7f1fa;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY8byzaDVW0oilhvT5DJloU3EMbZAngWKQR_IznLcRRyE8mZ3kXYx-coGpp7U3CsOFwu8&usqp=CAU'); /* URL to your background image */
+            background-size:cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        body::after {
+            content: '';
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(240, 240, 240, 0.95); /* Adjust the opacity (0.3 in this case) for the fade effect */
+            z-index: -1; /* Ensure it's behind other content */
+}
+        /* nav {
+            background-color: #ccebe8;
+            color: #fff;
+            padding: 10px;
+        
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-size: large;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        } */
+        
+        section {
+            padding: 20px;
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            z-index: 9999;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .floating-nav {
+            position: fixed;
+            top: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            background-color: #d5d7e2; /* Background color */
+            box-shadow: 0 2px 5px rgba(199, 141, 141, 0.9); /* Shadow for a floating effect */
+            z-index: 1000; /* Ensure it's above other elements */
+            padding: 10px;
+            }
+
+            .floating-nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .floating-nav li {
+                display: inline-block;
+                margin-right: 10px; /* Adjust spacing between items */
+            }
+
+            .floating-nav a {
+                    text-decoration:wavy;
+                    color: #0c82a0; /* Link color */
+                    font-weight: bold;
+                    transition: color 0.3s ease;
+    }
+
+    .floating-nav a:hover {
+        color: #314ecf; /* Hover color */
+    }
+
+    #back-to-top:hover {
+        background-color: #555;
+    }
+    #logo{
+        height: 100px;
+        width: 100px;
+        padding-left: 10%;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+    
+<nav class="floating-nav">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume/CV</a></li>
+        <li><a href="#blog">Blog/Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        
+    </ul>
+</nav>
+    </header>
+<section id="home">
+    <img id="logo" src="https://tinyurl.com/bdhckt9b" alt="Logo">
+
+    <h1>Welcome to My Portfolio</h1>
+    <p>This is the home page of my portfolio.</p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate web developer with experience in various technologies.</p>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <p>Here are some of the projects I've worked on:</p>
+    <ul>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Here are some of the projects I've worked on:</p>
+            <ul>
+                <li>
+                    <h3>Project 1: Personal Blog</h3>
+                    <p>A personal blog website where I share my thoughts, experiences, and projects.</p>
+                    <p>Tools and technologies used: HTML, CSS, JavaScript, WordPress</p>
+                    <a href="https://example.com/project1" target="_blank">View Project</a>
+                </li>
+                <li>
+                    <h3>Project 2: Task Management App</h3>
+                    <p>An application for managing tasks and projects, with features like task assignment, deadlines, and progress tracking.</p>
+                    <p>Tools and technologies used: React, Node.js, Express, MongoDB</p>
+                    <a href="https://example.com/project2" target="_blank">View Project</a>
+                </li>
+                <li>
+                    <h3>Project 3: E-commerce Platform</h3>
+                    <p>An online marketplace where users can buy and sell products, with features like product listings, shopping cart, and user profiles.</p>
+                    <p>Tools and technologies used: Django, PostgreSQL, Stripe API</p>
+                    <a href="https://example.com/project3" target="_blank">View Project</a>
+                </li>
+                <li>
+                    <h3>Project 4: Portfolio Website</h3>
+                    <p>My personal portfolio website showcasing my skills, experience, and projects.</p>
+                    <p>Tools and technologies used: HTML, CSS, JavaScript, Bootstrap</p>
+                    <a href="https://example.com/project4" target="_blank">View Project</a>
+                </li>
+            </ul>
+        </section>
+        <section id="blog">
+            <h2>Blog</h2>
+            
+            <article>
+                <h3>Getting Started with React: A Beginner's Guide</h3>
+                <p>This article provides an introduction to React.js, a popular JavaScript library for building user interfaces. It covers the basics of setting up a React project, creating components, managing state, and handling events.</p>
+                <a href="#">Read More</a>
+            </article>
+            
+            <article>
+                <h3>10 Essential VS Code Extensions for Web Developers</h3>
+                <p>This article highlights ten must-have Visual Studio Code extensions that can enhance productivity and streamline the development workflow for web developers. It covers extensions for code formatting, linting, debugging, and more.</p>
+                <a href="#">Read More</a>
+            </article>
+            
+            <article>
+                <h3>Understanding RESTful APIs: A Developer's Guide</h3>
+                <p>This article explains the fundamentals of RESTful APIs (Representational State Transfer) and how they are used to build web services. It covers concepts such as HTTP methods, status codes, resource endpoints, and best practices for designing RESTful APIs.</p>
+                <a href="#">Read More</a>
+            </article>
+            
+            <article>
+                <h3>Introduction to Responsive Web Design: Principles and Techniques</h3>
+                <p>This article introduces the principles and techniques of responsive web design, which allows websites to adapt their layout and content based on the user's device and screen size. It covers media queries, flexible grids, and other strategies for creating responsive designs.</p>
+                <a href="#">Read More</a>
+            </article>
+            
+            <article>
+                <h3>The Importance of Version Control: A Developer's Perspective</h3>
+                <p>This article discusses the importance of version control systems (such as Git) in software development projects. It explores the benefits of version control for collaboration, code management, and tracking changes, and provides tips for using Git effectively.</p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
+        <section id="resume">
+            <h2>Resume/CV</h2>
+            <h3>Education</h3>
+            <p>Bachelor of Science in Computer Science - Kenyatta University (2023)</p>
+            
+            <h3>Work Experience</h3>
+            <p>Software Developer - Codec Computing Solutions (2020 - Present)</p>
+            <ul>
+                <li>Developed and maintained web applications using HTML, CSS, JavaScript, and PHP.</li>
+                <li>Collaborated with team members to design and implement new features.</li>
+                <li>Provided technical support and troubleshooting for software issues.</li>
+            </ul>
+            
+            <p>Intern - Vesen Corporation (2020 - 2021)</p>
+            <ul>
+                <li>Assisted with software testing and quality assurance.</li>
+                <li>Participated in team meetings and brainstorming sessions.</li>
+                <li>Completed assigned tasks and projects within deadlines.</li>
+            </ul>
+            
+            <h3>Skills</h3>
+            <ul>
+                <li>Programming Languages: JavaScript, Python, Java, C++</li>
+                <li>Web Development: HTML, CSS, React.js, Node.js</li>
+                <li>Database Management: SQL, MongoDB</li>
+                <li>Version Control: Git, GitHub</li>
+                <li>Other: Agile Development, Responsive Design, UI/UX Design</li>
+            </ul>
+            
+            <h3>Certifications</h3>
+            <p>Certified Web Developer - PLP (2024)</p>
+            
+            <h3>References</h3>
+            <p>Available upon request.</p>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <ul>
+                <li>
+                    <h3>Website Development</h3>
+                    <p>Design and development of responsive and user-friendly websites using modern web technologies like HTML5, CSS3, and JavaScript frameworks such as React or Angular.</p>
+                </li>
+                <li>
+                    <h3>Web Application Development</h3>
+                    <p>Building dynamic web applications with server-side technologies like Node.js, Express.js, and databases such as MongoDB or MySQL.</p>
+                </li>
+                <li>
+                    <h3>Mobile App Development</h3>
+                    <p>Creating native or hybrid mobile applications for iOS and Android platforms using frameworks like React Native or Flutter.</p>
+                </li>
+                <li>
+                    <h3>E-commerce Solutions</h3>
+                    <p>Developing online stores with features like product listings, shopping carts, payment gateways, and user authentication using platforms like Shopify, WooCommerce, or custom solutions.</p>
+                </li>
+                <li>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing intuitive and visually appealing user interfaces and experiences for websites and applications to enhance user engagement and satisfaction.</p>
+                </li>
+                <li>
+                    <h3>Custom Software Development</h3>
+                    <p>Building bespoke software solutions tailored to the specific needs and requirements of clients, from small business tools to enterprise-level applications.</p>
+                </li>
+                <li>
+                    <h3>Consulting and Training</h3>
+                    <p>Providing expert advice, guidance, and training on software development best practices, technologies, and methodologies to individuals or organizations.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>"Working with [Developer's Name] was an absolute pleasure. They were highly professional, communicative, and delivered exceptional results. I would highly recommend their services to anyone looking for top-notch development work."</p>
+                <p class="author">- John Kirk, CEO of Paypap Solutions</p>
+            </div>
+            <div class="testimonial">
+                <p>"[Developer's Name] exceeded our expectations with their expertise and dedication. They went above and beyond to ensure that our project was successful and delivered on time. We look forward to working with them again in the future."</p>
+                <p class="author">- Jane Smith, Founder of Vesen Computing</p>
+            </div>
+            <!-- Add more testimonials as needed -->
+        </section>
+        <section id="contact">
+            <h2>Contact Details</h2>
+            <ul>
+                <li>
+                    <strong>Email:</strong> thuoedwins@gmail.com
+                </li>
+                <li>
+                    <strong>Phone:</strong> +254 705565267
+                </li>
+                <li>
+                    <strong>Address:</strong> Kimathi Street, Nairobi, Kenya
+                </li>
+                <li>
+                    <strong>Social Media:</strong>
+                    <ul>
+                        <li><a href="https://twitter.com/thuoEdwins" target="_blank">Twitter</a></li>
+                        <li><a href="https://linkedin.com/in/thuoEdwins" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/thuoEdwins" target="_blank">GitHub</a></li>
+                        <!-- Add more social media links as needed -->
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="faq">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            
+            <div class="faq-item">
+                <h3>What programming languages do you specialize in?</h3>
+                <p>I specialize in JavaScript, Python, and Java. However, I am proficient in a variety of programming languages and always eager to learn new ones.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>How can I contact you for project inquiries?</h3>
+                <p>You can reach me via email at thuoedwins@gmail.com or through the contact form on my website. I typically respond to inquiries within 24 hours.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do you offer freelance services?</h3>
+                <p>Yes, I offer freelance services for website development, web application development, and mobile app development. Feel free to contact me with your project requirements.</p>
+            </div>
+            
+            <!-- Add more FAQ items as needed -->
+        </section>
+        <section id="faq">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            
+            <div class="faq-item">
+                <h3>What programming languages do you specialize in?</h3>
+                <p>I specialize in JavaScript, Python, and Java. However, I am proficient in a variety of programming languages and always eager to learn new ones.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>How can I contact you for project inquiries?</h3>
+                <p>You can reach me via email at example@example.com or through the contact form on my website. I typically respond to inquiries within 24 hours.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do you offer freelance services?</h3>
+                <p>Yes, I offer freelance services for website development, web application development, and mobile app development. Feel free to contact me with your project requirements.</p>
+            </div>
+            
+            <!-- Add more FAQ items as needed -->
+        </section>
+        
+        
+        
+        
+
+        
+        
+        
+    </ul>
+    
+    <a href="#" id="back-to-top" title="Back to Top">&uarr;</a>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var backToTopButton = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 100) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+</body>
+</html>
